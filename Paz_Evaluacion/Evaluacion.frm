@@ -611,6 +611,11 @@ Private Sub Command15_Click()
             
     End If
     
+    opSumaT = False
+    opRestaT = False
+    opDivT = False
+    opMultiT = False
+    
     estaVacio = True
     Command11.Enabled = True
     Command12.Enabled = True
