@@ -1,0 +1,3 @@
+﻿Deberia de imprimir estamos iguales porque el Valor es 0
+No entra en ninguno de los casos de If o else porque no cumple con la condicion
+0 no es Mennor a 0, ni mayor a 0, simplemente imprime "Estamos Iguales"

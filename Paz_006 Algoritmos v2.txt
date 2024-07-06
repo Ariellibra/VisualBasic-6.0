@@ -1,0 +1,19 @@
+Algoritmo para el ejercicio 006: "Tablas"
+
+>Crear una Label eh indicar en el caption que se escriba un numero y se aprete el boton para ver las tablas de multiplicar
+>Crear un TextBox que va a recibir el numero a multiplicar
+>Crear un CommandButton con el nombre 'Aceptar', que se va a encargar de realizar la operacion
+>Crear un segundo label para poder mostrar las tablas ahi
+>En el evento click del CommandButton debemos:
+    Usar el caption del segundo label para mostrar las tablas, esto lo hacemos de la siguente forma
+    >Editamos el caption para que se impriman una tabla de multiplicar con el numero ingresado en nuestra TextBox desde el 0 al 10 cuando se haga el evento click
+    >La forma deberia de ser de 'NumeroIngresado x 0 = NumeroIngresado * 0', asi sucesibamente hasta llegar al 10, tener en cuenta que:
+        >Se debe transformar el NumeroIngresado del Text1.Text con la herramienta CInt()
+        >Hacer uso de la concatenacion con el simbolo de '&'
+        >Ej: Text1.Text & " x 0 = " & CInt(Text1.Text) * 0
+            > 5 X 0 = 5 * 0
+>Crear un CommandButton para poder cerrar el programa
+>Ejecutamos y probamos el programa
+>Deberia de andar perfectamente
+>Guardar el proyecto, enviar a un archivo Zip, renombrar de la forma correcta (ApellidoAlumno_Ejercicio)
+>Subir y entregar en Classroom

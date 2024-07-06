@@ -1,0 +1,22 @@
+Algoritmo para poder usar Visual Basic 6 en un sistema operativo Windows 7:
+
+>Descargar la Maquina virtual (Oracle VM)
+>Iniciar el programa
+>Hacer click en Nueva
+>Escribir el "Nombre" y definir el Sistema Operativo que se quiere instalar
+>Seleccionamos Windows XP (64 Bits)
+>Asignamos el tamaño de la Memoria
+>Creamos un Disco duro virtual
+>Una ves terminado el proceso para crear el disco duro virtual se creara una Maquina virtual con el nombre elejido
+>Hacemos doble click en la Maquina virtual
+>Ahora debemos Instalar la Imagen ISO de Windows XP deseada (64bits)
+>Terminar el proceso de Instalacion de Windows XP
+>Una ves terminada la instalacion, debemos crear una Carpeta Compartida con nuestro sistema y la maquina virtual (Es la forma que tenemos para pasarnos datos, desde nuestra maquina a la maquina virtual)
+>Con la maquina virtual ejecutandose, hacemos click en la seccion de 'Maquina', 'Configuracion', 'Carpetas Compartidas'
+>Seleccionamos la ruta de nuestra carpeta (La carpeta que esta en nuestra pc)
+>Le damos un nombre, tildamos las opciones 'Automontar' y 'Hacer Permanente', aceptamos
+>Cerramos el programa de la maquina virtual
+>La volvemos a abrir
+>Pasamos los archivos de instalacion de Visual Basic 6.0 a nuestra carpeta compartida en nuestra pc
+>En nuestra Maquina virtual, ejecutamos el archivo de instalacion de VB 6.0
+>Una ves terminado el proceso de instalacion de VB 6.0 solo queda ejecutarlo y deberia de andar sin problemas
