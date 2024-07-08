@@ -1,0 +1,21 @@
+Dadas las variables de tipo entero con valores 
+A = 5 
+B = 3 
+C = -12 
+indicar si la evaluación de estas expresiones daría como resultado verdadero o falso:
+a) A > 3	V
+b) A > C	V
+c) A < C	F  
+d) B < C	F
+e) B != C	V
+f) A = 3	F
+g) A * B = 15	V
+h) A * B = -30	F
+i) C / B < A	V
+j) C / B = -10	F
+k) C / B = -4	V
+l) A + B + C = 5	F
+m) (A+B = 8) AND (A - B = 2)      V
+n) (A+B = 8) OR (A - B = 6)	V
+o) A > 3  AND B > 3 AND C < 3	F        
+p) A > 3 AND B >= 3 AND C < -3	V

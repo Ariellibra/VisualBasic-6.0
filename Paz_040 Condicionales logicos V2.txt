@@ -1,0 +1,14 @@
+Si X, Y y Z son variables de tipo boolean con valores 
+X = true 
+Y = false 
+Z = true
+determina el valor de las siguientes expresiones lógicas:
+
+a) (X AND Y) OR (X AND Z)	V
+b) (X OR NOT Y) AND (NOT X OR Z)	V
+c) X OR Y AND Z	V
+d) !(X OR Y) AND Z    V
+     v         f        v                   f                  v
+e) X OR Y OR X AND NOT Z AND NOT Y      F
+         f              v         v           v           v
+f) NOT X OR !Y OR Z AND X AND !Y	V
