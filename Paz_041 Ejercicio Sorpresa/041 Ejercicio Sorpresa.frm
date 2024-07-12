@@ -1,33 +1,80 @@
 VERSION 5.00
 Begin VB.Form Form1 
+   BackColor       =   &H00008000&
    Caption         =   "Form1"
-   ClientHeight    =   10485
+   ClientHeight    =   7575
    ClientLeft      =   60
    ClientTop       =   450
-   ClientWidth     =   17220
+   ClientWidth     =   4230
    LinkTopic       =   "Form1"
-   ScaleHeight     =   10485
-   ScaleWidth      =   17220
+   ScaleHeight     =   7575
+   ScaleWidth      =   4230
    StartUpPosition =   3  'Windows Default
-   Begin VB.CommandButton Command1 
-      BackColor       =   &H00000000&
-      Caption         =   "Calcular"
+   Begin VB.CommandButton Command2 
+      BackColor       =   &H008080FF&
+      Caption         =   "Salir"
+      BeginProperty Font 
+         Name            =   "Franklin Gothic Medium"
+         Size            =   12
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
       Height          =   615
       Left            =   2400
+      Style           =   1  'Graphical
+      TabIndex        =   4
+      Top             =   6600
+      Width           =   1455
+   End
+   Begin VB.CommandButton Command1 
+      BackColor       =   &H0080C0FF&
+      Caption         =   "Calcular"
+      BeginProperty Font 
+         Name            =   "Franklin Gothic Medium"
+         Size            =   12
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   615
+      Left            =   2400
+      Style           =   1  'Graphical
       TabIndex        =   1
       Top             =   1680
       Width           =   1455
    End
    Begin VB.TextBox Text1 
+      BeginProperty Font 
+         Name            =   "Franklin Gothic Medium"
+         Size            =   12
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
       Height          =   615
       Left            =   360
       TabIndex        =   0
-      Text            =   "Text1"
       Top             =   1680
       Width           =   1695
    End
    Begin VB.Label Label2 
-      BackColor       =   &H0080FF80&
+      BackColor       =   &H00FFC0FF&
+      BeginProperty Font 
+         Name            =   "Franklin Gothic Medium"
+         Size            =   12
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
       Height          =   3615
       Left            =   360
       TabIndex        =   3
@@ -35,8 +82,17 @@ Begin VB.Form Form1
       Width           =   3495
    End
    Begin VB.Label Label1 
-      BackColor       =   &H0080FF80&
+      BackColor       =   &H00FFC0FF&
       Caption         =   "Ingrese el vuelto, para saber que billetes entregar"
+      BeginProperty Font 
+         Name            =   "Franklin Gothic Medium"
+         Size            =   12
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
       Height          =   975
       Left            =   360
       TabIndex        =   2
@@ -72,7 +128,8 @@ Private Sub Monedero()
     "Billetes de $ 100 = " & cont100 & vbCrLf & _
     "Billetes de $ 50 = " & cont50 & vbCrLf & _
     "Billetes de $ 20 = " & cont20 & vbCrLf & _
-    "Billetes de $ 10 = " & cont10
+    "Billetes de $ 10 = " & cont10 & vbCrLf & _
+    "Y sobro $ " & vuelto
     
     Limpiar
     
@@ -190,6 +247,21 @@ Private Sub Command1_Click()
     
 End Sub
 
-Private Sub Label2_Click()
-
+Private Sub Command2_Click()
+    
+    End
+    
 End Sub
+
+Private Sub Form_Activate()
+
+    cont1000 = 0
+    cont500 = 0
+    cont200 = 0
+    cont100 = 0
+    cont50 = 0
+    cont20 = 0
+    cont10 = 0
+    
+End Sub
+
