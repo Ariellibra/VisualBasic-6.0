@@ -17,31 +17,36 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
 
-Dim num As Double
+Dim num As String
 
 Private Sub ParImpar()
+
+    Do
      
+        num = InputBox("Ingrese un numero", "ParImpar")
 
-
-    If CInt(num / 2) * 2 = num Then
+        If CInt(CDbl(num) / 2) * 2 = num Then
         
-        MsgBox "Es Par", vbCritical, "Par"
-    Else
-        MsgBox "Es Impar", vbCritical, "Impar"
+            MsgBox "Es Par", vbCritical, "Par"
+        Else
+            MsgBox "Es Impar", vbCritical, "Impar"
         
-    End If
+        End If
+    
+    Loop Until LCase(num) = "fin"
     
 End Sub
 
 Private Sub Calculo()
     
+    
     ParImpar
+        
+    
     
 End Sub
 
 Private Sub Form_Activate()
-    
-    num = InputBox("Ingrese un numero", "ParImpar")
     
     
     Calculo
