@@ -24,8 +24,14 @@ Private Sub ParImpar()
     Do
      
         num = InputBox("Ingrese un numero", "ParImpar")
-
-        If CInt(CDbl(num) / 2) * 2 = num Then
+        
+        If LCase(num) = "fin" Then
+        
+        ElseIf LCase(num) = "fin" Then
+                
+            MsgBox "Ingrese algo", vbCritical, "Error"
+            
+        ElseIf CInt(CDbl(num) / 2) * 2 = num Then
         
             MsgBox "Es Par", vbCritical, "Par"
         Else
@@ -50,6 +56,7 @@ Private Sub Form_Activate()
     
     
     Calculo
+    End
     
 
 End Sub
