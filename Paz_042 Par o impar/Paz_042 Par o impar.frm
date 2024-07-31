@@ -18,44 +18,55 @@ Attribute VB_Exposed = False
 Option Explicit
 
 Dim num As String
+Dim res As Integer
+
 
 Private Sub ParImpar()
+    
+    
 
     Do
      
         num = InputBox("Ingrese un numero", "ParImpar")
         
-        If LCase(num) = "fin" Then
+        Calculo (num)
         
-        ElseIf LCase(num) = "fin" Then
-                
-            MsgBox "Ingrese algo", vbCritical, "Error"
-            
-        ElseIf CInt(CDbl(num) / 2) * 2 = num Then
-        
-            MsgBox "Es Par", vbCritical, "Par"
-        Else
-            MsgBox "Es Impar", vbCritical, "Impar"
-        
-        End If
+        Pregunta
     
     Loop Until LCase(num) = "fin"
     
 End Sub
 
-Private Sub Calculo()
+Private Sub Calculo(num1 As String)
     
+    res = CInt(CDbl(num1) / 2) * 2
     
-    ParImpar
+End Sub
+
+Private Sub Pregunta()
+    
+    If LCase(num) = "fin" Then
         
+    ElseIf LCase(num) = "" Then
+                
+        MsgBox "Ingrese algo", vbCritical, "Error"
+            
+    ElseIf res = num Then
+        
+        MsgBox "Es Par", vbCritical, "Par"
+            
+    Else
+        MsgBox "Es Impar", vbCritical, "Impar"
+        
+    End If
     
-    
+
 End Sub
 
 Private Sub Form_Activate()
     
     
-    Calculo
+    ParImpar
     End
     
 
