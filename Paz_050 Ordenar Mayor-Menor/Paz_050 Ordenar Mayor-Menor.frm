@@ -17,7 +17,7 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
 
-Dim numArray(9), n, i, mayor, menor As Integer
+Dim numArray(9), n, i, menor As Integer
 
 Private Sub LlenoArray()
 
@@ -34,6 +34,8 @@ Private Sub LlenoArray()
         Print (numArray(n) & " " & n)
         
     Next n
+    
+    Print ("--------------------------")
     
 End Sub
 
@@ -53,8 +55,6 @@ Private Sub MayorMenor()
         End If
         
     Next n
-    
-    Print (menor)
     
     For n = 0 To 9
         
