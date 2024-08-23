@@ -10,6 +10,63 @@ Begin VB.Form Form1
    ScaleHeight     =   5895
    ScaleWidth      =   18630
    StartUpPosition =   3  'Windows Default
+   Begin VB.CommandButton Command7 
+      BackColor       =   &H0080C0FF&
+      Caption         =   "Agregar"
+      BeginProperty Font 
+         Name            =   "Franklin Gothic Medium"
+         Size            =   12
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   615
+      Left            =   8520
+      Style           =   1  'Graphical
+      TabIndex        =   20
+      Top             =   4680
+      Width           =   1575
+   End
+   Begin VB.CommandButton Command6 
+      BackColor       =   &H0080C0FF&
+      Caption         =   "Remover"
+      BeginProperty Font 
+         Name            =   "Franklin Gothic Medium"
+         Size            =   12
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   615
+      Left            =   11640
+      Style           =   1  'Graphical
+      TabIndex        =   19
+      Top             =   3720
+      Width           =   1575
+   End
+   Begin VB.CommandButton Command5 
+      BackColor       =   &H0080C0FF&
+      Caption         =   "Modificar"
+      BeginProperty Font 
+         Name            =   "Franklin Gothic Medium"
+         Size            =   12
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   615
+      Left            =   8520
+      Style           =   1  'Graphical
+      TabIndex        =   18
+      Top             =   3720
+      Width           =   1575
+   End
    Begin VB.CommandButton Command4 
       BackColor       =   &H008080FF&
       Caption         =   "Salir"
@@ -377,6 +434,25 @@ End Sub
 Private Sub Command4_Click()
     
     End
+    
+End Sub
+
+Private Sub Command5_Click()
+    
+    List1.List(List1.ListIndex) = "El Alumno/a " & Label2(0) & " " & Label2(1) & _
+    " que tiene " & Label2(2) & " años de edad esta en el curso " & Label2(3)
+
+End Sub
+
+Private Sub Command6_Click()
+    
+    List1.RemoveItem (List1.ListIndex)
+    
+End Sub
+
+Private Sub Command7_Click()
+    
+    List1.AddItem "Nose", 1
     
 End Sub
 
