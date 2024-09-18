@@ -414,7 +414,7 @@ End Sub
 Private Sub Command2_Click()
   
     List1.AddItem ("El Alumno/a " & Label2(0) & " " & Label2(1) & _
-    " que tiene " & Label2(2) & " años de edad esta en el curso " & Label2(3))
+    " que tiene " & Label2(2) & " aï¿½os de edad esta en el curso " & Label2(3))
     
     Label3 = "Cantidad de usuarios cargados " & List1.ListCount
         
@@ -440,7 +440,7 @@ End Sub
 Private Sub Command5_Click()
     
     List1.List(List1.ListIndex) = "El Alumno/a " & Label2(0) & " " & Label2(1) & _
-    " que tiene " & Label2(2) & " años de edad esta en el curso " & Label2(3)
+    " que tiene " & Label2(2) & " aï¿½os de edad esta en el curso " & Label2(3)
 
 End Sub
 
