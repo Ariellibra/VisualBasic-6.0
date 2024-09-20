@@ -61,6 +61,7 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
+Dim n As Integer
 Dim dato1a, dato2a, dato3a, dato4a, dato5a As String
 Dim dato1b, dato2b, dato3b, dato4b, dato5b As String
 
@@ -75,16 +76,11 @@ Private Sub Command1_Click()
         dato1a = ""
         Input #1, dato1a
         
-        Print dato1a
-        
         List1.AddItem (dato1a)
     
     Loop
     
     Close #1
-    
-    
-    
 
 End Sub
 
@@ -102,26 +98,34 @@ Private Sub Command2_Click()
     
     Close #2
     
-    
-
 End Sub
 
 Private Sub Command3_Click()
 
-    
     Open App.Path & "\Ariel Paz - Archivo de alumnos  1.txt" For Output As #1
-    Open App.Path & "\Ariel Paz - archivo actualizador de alumnos.txt" For Input As #2
+    
+    For n = 0 To List2.ListCount - 1
+        
+        Print #1, List2.List(n)
+        
+    Next n
+    
+    Close #1
+    
+    Open App.Path & "\Ariel Paz - Archivo de alumnos  1.txt" For Input As #1
     
     Do Until EOF(1)
     
         Input #1, dato1a
         
-        List1.AddItem (dato1a)
+        List3.AddItem (dato1a)
     
     Loop
     
     Close #1
-    Close #2
+
+    
+    
 
 End Sub
 
