@@ -9,6 +9,14 @@ Begin VB.Form Form1
    ScaleHeight     =   12285
    ScaleWidth      =   23475
    StartUpPosition =   3  'Windows Default
+   Begin VB.CommandButton Command4 
+      Caption         =   "Command4"
+      Height          =   855
+      Left            =   3840
+      TabIndex        =   6
+      Top             =   480
+      Width           =   2415
+   End
    Begin VB.CommandButton Command3 
       Caption         =   "Command1"
       Height          =   735
@@ -73,12 +81,27 @@ Private Sub Command1_Click()
     
     Do Until EOF(1)
     
-        dato1a = ""
         Input #1, dato1a
         
         List1.AddItem (dato1a)
     
     Loop
+    
+    Close #1
+    
+    For n = 0 To List1.ListCount - 1
+        
+        List1.List(n) = Replace(List1.List(n), ";", ",")
+    
+    Next n
+    
+    Open App.Path & "\Ariel Paz - Archivo de alumnos  1.txt" For Output As #1
+    
+    For n = 0 To List1.ListCount - 1
+        
+        Print #1, List1.List(n)
+        
+    Next n
     
     Close #1
 
@@ -97,6 +120,24 @@ Private Sub Command2_Click()
     Loop
     
     Close #2
+    
+    For n = 0 To List2.ListCount - 1
+        
+        List2.List(n) = Replace(List2.List(n), ";", ",")
+    
+    Next n
+    
+    Open App.Path & "\Ariel Paz - archivo actualizador de alumnos.txt" For Output As #2
+    
+    For n = 0 To List2.ListCount - 1
+        
+        Print #2, List2.List(n)
+        
+    Next n
+    
+    Close #2
+    
+    
     
 End Sub
 
@@ -124,8 +165,14 @@ Private Sub Command3_Click()
     
     Close #1
 
-    
-    
-
 End Sub
 
+Private Sub Command4_Click()
+    
+    For n = 0 To List1.ListCount - 1
+        
+        List1.List(n) = Replace(List1.List(n), ";", ",")
+    
+    Next n
+
+End Sub
