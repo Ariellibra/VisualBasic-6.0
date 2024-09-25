@@ -25,22 +25,45 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
 
-Dim objMascotas1 As Mascotas
+Dim objMascotas1 As New Mascotas
+Dim objMascotas2 As New Mascotas
 Dim boton As CommandButton
+Dim grande As Boolean
 
 
 Private Sub Command1_Click()
     
-    Print (objMascotas1)
+    Print (objMascotas1.GetName)
+    Print (objMascotas1.edad)
+    Print (objMascotas1.peso)
+    Print (objMascotas1.raza)
+    
+    Print (objMascotas2.GetName)
+    Print (objMascotas2.edad)
+    Print (objMascotas2.peso)
+    Print (objMascotas2.raza)
+    
+    grande = objMascotas1.esGrande
+    
+    If grande = True Then
+    
+        Print ("Es Mayor de edad")
+    Else
+        
+        Print ("Es Menor de edad")
+    End If
     
 End Sub
 
 Private Sub Form_Activate()
         
-    objMascotas1.name = "Morgana"
+    objMascotas1.SetName "Morgana"
     objMascotas1.edad = 5
-    objMascotas1.peso = 7.5
+    objMascotas1.peso = 9
     objMascotas1.raza = "Callejero"
+    
+    objMascotas2.Constructor "Moona", 3, 7.5, "Callejera"
+    
     
 End Sub
 
