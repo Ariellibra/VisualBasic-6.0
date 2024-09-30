@@ -52,7 +52,8 @@ Public Sub arrancar()
         
         If combustibleActual <= 0 Then
             
-            MsgBox "No tenes mas Nafta", vbCritical, "Sin Nafta"
+            MsgBox "No tenes mas Nafta, anda a la Ypf y carga nafta", vbCritical, "Sin Nafta"
+            motor = False
         
         Else
         
@@ -60,7 +61,7 @@ Public Sub arrancar()
             
                 If (combustibleActual - 3) < 0 Then
                     
-                    MsgBox "No tenes mas Nafta", vbCritical, "Sin Nafta"
+                    MsgBox "No tenes mas Nafta, anda a la Ypf y carga nafta", vbCritical, "Sin Nafta"
                 Else
                     combustibleActual = combustibleActual - 3
                     
@@ -69,7 +70,7 @@ Public Sub arrancar()
             
                 If (combustibleActual - 8) < 0 Then
                     
-                    MsgBox "No tenes mas Nafta", vbCritical, "Sin Nafta"
+                    MsgBox "No tenes mas Nafta, anda a la Ypf y carga nafta", vbCritical, "Sin Nafta"
                 Else
                     combustibleActual = combustibleActual - 8
                     
@@ -79,7 +80,7 @@ Public Sub arrancar()
             
                 If (combustibleActual - 10) < 0 Then
                     
-                    MsgBox "No tenes mas Nafta", vbCritical, "Sin Nafta"
+                    MsgBox "No tenes mas Nafta, anda a la Ypf y carga nafta", vbCritical, "Sin Nafta"
                 Else
                     combustibleActual = combustibleActual - 10
                     
