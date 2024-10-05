@@ -15,7 +15,7 @@ Private hundido As Boolean
 Private posci As Integer
 Private dueño As String
 
-Public Sub Constructor(dueñoC As String, posciC As Integer, hundidoC As Boolean)
+Public Sub Constructor(ByVal dueñoC As String, ByVal posciC As Integer, ByVal hundidoC As Boolean)
 
     dueño = dueñoC
     posci = posciC
@@ -29,7 +29,7 @@ Public Function GetPosci() As Integer
     
 End Function
 
-Public Sub SetHundido(bool)
+Public Sub SetHundido(bool As Boolean)
     
     hundido = bool
 

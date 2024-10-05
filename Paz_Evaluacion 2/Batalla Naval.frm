@@ -9,20 +9,36 @@ Begin VB.Form Form1
    ScaleHeight     =   11460
    ScaleWidth      =   22980
    StartUpPosition =   3  'Windows Default
+   Begin VB.CommandButton Command5 
+      Caption         =   "Command4"
+      Height          =   615
+      Left            =   17400
+      TabIndex        =   88
+      Top             =   5880
+      Width           =   1095
+   End
+   Begin VB.CommandButton Command4 
+      Caption         =   "Command4"
+      Height          =   615
+      Left            =   15960
+      TabIndex        =   87
+      Top             =   5880
+      Width           =   1095
+   End
    Begin VB.CommandButton Command3 
       Caption         =   "Command3"
       Height          =   735
-      Left            =   18000
+      Left            =   20760
       TabIndex        =   50
-      Top             =   7200
+      Top             =   6480
       Width           =   1575
    End
    Begin VB.Frame Frame4 
       Caption         =   "Frame3"
       Height          =   2775
-      Left            =   17760
+      Left            =   20160
       TabIndex        =   44
-      Top             =   3840
+      Top             =   3360
       Width           =   2655
       Begin VB.TextBox Text2 
          Height          =   495
@@ -68,9 +84,9 @@ Begin VB.Form Form1
    Begin VB.Frame Frame3 
       Caption         =   "Frame3"
       Height          =   2775
-      Left            =   17760
+      Left            =   20160
       TabIndex        =   2
-      Top             =   720
+      Top             =   360
       Width           =   2655
       Begin VB.CommandButton Command1 
          Caption         =   "Aceptar"
@@ -114,12 +130,373 @@ Begin VB.Form Form1
       End
    End
    Begin VB.Frame Frame2 
+      BackColor       =   &H00C0C000&
       Caption         =   "Barcos Enemigos"
       Height          =   6975
       Left            =   7440
       TabIndex        =   1
       Top             =   720
       Width           =   8175
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   35
+         Left            =   5640
+         TabIndex        =   86
+         Top             =   5760
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   34
+         Left            =   4560
+         TabIndex        =   85
+         Top             =   5760
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   33
+         Left            =   3480
+         TabIndex        =   84
+         Top             =   5760
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   32
+         Left            =   2400
+         TabIndex        =   83
+         Top             =   5760
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   31
+         Left            =   1320
+         TabIndex        =   82
+         Top             =   5760
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   30
+         Left            =   240
+         TabIndex        =   81
+         Top             =   5760
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   29
+         Left            =   5640
+         TabIndex        =   80
+         Top             =   4680
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   28
+         Left            =   4560
+         TabIndex        =   79
+         Top             =   4680
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   27
+         Left            =   3480
+         TabIndex        =   78
+         Top             =   4680
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   26
+         Left            =   2400
+         TabIndex        =   77
+         Top             =   4680
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   25
+         Left            =   1320
+         TabIndex        =   76
+         Top             =   4680
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   24
+         Left            =   240
+         TabIndex        =   75
+         Top             =   4680
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   23
+         Left            =   5640
+         TabIndex        =   74
+         Top             =   3600
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   22
+         Left            =   4560
+         TabIndex        =   73
+         Top             =   3600
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   21
+         Left            =   3480
+         TabIndex        =   72
+         Top             =   3600
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   20
+         Left            =   2400
+         TabIndex        =   71
+         Top             =   3600
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   19
+         Left            =   1320
+         TabIndex        =   70
+         Top             =   3600
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   18
+         Left            =   240
+         TabIndex        =   69
+         Top             =   3600
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   17
+         Left            =   5640
+         TabIndex        =   68
+         Top             =   2520
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   16
+         Left            =   4560
+         TabIndex        =   67
+         Top             =   2520
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   15
+         Left            =   3480
+         TabIndex        =   66
+         Top             =   2520
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   14
+         Left            =   2400
+         TabIndex        =   65
+         Top             =   2520
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   13
+         Left            =   1320
+         TabIndex        =   64
+         Top             =   2520
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   12
+         Left            =   240
+         TabIndex        =   63
+         Top             =   2520
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   11
+         Left            =   5640
+         TabIndex        =   62
+         Top             =   1440
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   10
+         Left            =   4560
+         TabIndex        =   61
+         Top             =   1440
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   9
+         Left            =   3480
+         TabIndex        =   60
+         Top             =   1440
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   8
+         Left            =   2400
+         TabIndex        =   59
+         Top             =   1440
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   7
+         Left            =   1320
+         TabIndex        =   58
+         Top             =   1440
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   6
+         Left            =   240
+         TabIndex        =   57
+         Top             =   1440
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   5
+         Left            =   5640
+         TabIndex        =   56
+         Top             =   360
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   4
+         Left            =   4560
+         TabIndex        =   55
+         Top             =   360
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   3
+         Left            =   3480
+         TabIndex        =   54
+         Top             =   360
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   2
+         Left            =   2400
+         TabIndex        =   53
+         Top             =   360
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   1
+         Left            =   1320
+         TabIndex        =   52
+         Top             =   360
+         Width           =   855
+      End
+      Begin VB.Label Cpu 
+         BackColor       =   &H00FFFF80&
+         Caption         =   "Label5"
+         Height          =   855
+         Index           =   0
+         Left            =   240
+         TabIndex        =   51
+         Top             =   360
+         Width           =   855
+      End
    End
    Begin VB.Frame Frame1 
       BackColor       =   &H00C0C000&
@@ -497,11 +874,10 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
-Dim cordX, cordY, cord As Integer
+Dim cordX, cordY, cord, cordCpu, rndCpuX, rndCpuY As Integer
 Dim BarcoPlayer(2) As New Barco
-Dim BarcoCpu(2) As New Barco
+Dim BarcoCpu(2) As Barco
 Dim n As Integer
-
 
 Private Sub Command1_Click()
     
@@ -511,6 +887,55 @@ Private Sub Command1_Click()
     cord = (6 * (cordY - 1)) + (cordX - 1)
     
     Ataque (cord)
+
+End Sub
+Private Sub CpuCrearBarco()
+    Dim posicionesOcupadas(2) As Integer
+    Dim ocupado As Boolean
+    Dim j As Integer
+    
+    For n = 0 To 2
+        Randomize
+    
+        ' Generar coordenadas aleatorias
+        rndCpuX = CInt((Rnd * 5) + 1)
+        rndCpuY = CInt((Rnd * 5) + 1)
+        
+        ' Calcular la posición de CPU
+        cordCpu = CInt((6 * (rndCpuY - 1)) + (rndCpuX - 1))
+        
+        For j = 0 To 2
+        
+            If cordCpu = posicionesOcupadas(n) Then
+                
+                rndCpuX = CInt((Rnd * 5) + 1)
+                rndCpuY = CInt((Rnd * 5) + 1)
+        
+                ' Calcular la posición de CPU
+                cordCpu = CInt((6 * (rndCpuY - 1)) + (rndCpuX - 1))
+            
+            Else
+            
+                posicionesOcupadas(n) = cordCpu
+                j = 2
+            
+            End If
+        
+        Next j
+        
+        ' Inicializar barco de CPU
+        Set BarcoCpu(n) = New Barco
+        BarcoCpu(n).Constructor "Cpu", cordCpu, False
+        
+        ' Cambiar el color de fondo del cuadro correspondiente
+        Cpu(BarcoCpu(n).GetPosci).BackColor = &H4080&
+    
+    Next n
+    
+End Sub
+Private Sub CpuAtaque()
+    
+    
 
 End Sub
 
@@ -560,18 +985,26 @@ Private Sub Command2_Click()
 End Sub
 
 Private Sub Command3_Click()
-    
-    For n = 0 To 2
-        
-        Player(BarcoPlayer(n).GetPosci).BackColor = &H4080&
-    
-    Next n
 
+    CpuCrearBarco
+
+End Sub
+
+Private Sub Command4_Click()
+    
+    Unload Form1
+    
+End Sub
+
+Private Sub Command5_Click()
+    
+    Load Form1
+    
 End Sub
 
 Private Sub Form_Activate()
     
     n = 0
-    
+
 End Sub
 
