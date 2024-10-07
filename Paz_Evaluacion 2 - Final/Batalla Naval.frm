@@ -13,28 +13,12 @@ Begin VB.Form Form1
       Caption         =   "Cambiar Turno"
       Height          =   855
       Left            =   6240
-      TabIndex        =   89
+      TabIndex        =   87
       Top             =   8160
       Width           =   2055
    End
-   Begin VB.CommandButton Command5 
-      Caption         =   "Command4"
-      Height          =   615
-      Left            =   17400
-      TabIndex        =   88
-      Top             =   5880
-      Width           =   1095
-   End
-   Begin VB.CommandButton Command4 
-      Caption         =   "Command4"
-      Height          =   615
-      Left            =   15960
-      TabIndex        =   87
-      Top             =   5880
-      Width           =   1095
-   End
    Begin VB.CommandButton Command3 
-      Caption         =   "Command3"
+      Caption         =   "Barcos Cpu"
       Height          =   735
       Left            =   20760
       TabIndex        =   50
@@ -42,7 +26,7 @@ Begin VB.Form Form1
       Width           =   1575
    End
    Begin VB.Frame Frame4 
-      Caption         =   "Frame3"
+      Caption         =   "Posicionar Barcos"
       Height          =   2775
       Left            =   20160
       TabIndex        =   44
@@ -90,7 +74,7 @@ Begin VB.Form Form1
       End
    End
    Begin VB.Frame Frame3 
-      Caption         =   "Frame3"
+      Caption         =   "Atacar"
       Height          =   2775
       Left            =   20160
       TabIndex        =   2
@@ -146,8 +130,7 @@ Begin VB.Form Form1
       Top             =   720
       Width           =   8175
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   35
          Left            =   5640
@@ -156,8 +139,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   34
          Left            =   4560
@@ -166,8 +148,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   33
          Left            =   3480
@@ -176,8 +157,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   32
          Left            =   2400
@@ -186,8 +166,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   31
          Left            =   1320
@@ -196,8 +175,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   30
          Left            =   240
@@ -206,8 +184,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   29
          Left            =   5640
@@ -216,8 +193,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   28
          Left            =   4560
@@ -226,8 +202,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   27
          Left            =   3480
@@ -236,8 +211,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   26
          Left            =   2400
@@ -246,8 +220,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   25
          Left            =   1320
@@ -256,8 +229,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   24
          Left            =   240
@@ -266,8 +238,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   23
          Left            =   5640
@@ -276,8 +247,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   22
          Left            =   4560
@@ -286,8 +256,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   21
          Left            =   3480
@@ -296,8 +265,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   20
          Left            =   2400
@@ -306,8 +274,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   19
          Left            =   1320
@@ -316,8 +283,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   18
          Left            =   240
@@ -326,8 +292,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   17
          Left            =   5640
@@ -336,8 +301,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   16
          Left            =   4560
@@ -346,8 +310,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   15
          Left            =   3480
@@ -356,8 +319,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   14
          Left            =   2400
@@ -366,8 +328,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   13
          Left            =   1320
@@ -376,8 +337,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   12
          Left            =   240
@@ -386,8 +346,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   11
          Left            =   5640
@@ -396,8 +355,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   10
          Left            =   4560
@@ -406,8 +364,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   9
          Left            =   3480
@@ -416,8 +373,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   8
          Left            =   2400
@@ -426,8 +382,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   7
          Left            =   1320
@@ -436,8 +391,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   6
          Left            =   240
@@ -446,8 +400,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   5
          Left            =   5640
@@ -456,8 +409,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   4
          Left            =   4560
@@ -466,8 +418,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   3
          Left            =   3480
@@ -476,8 +427,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   2
          Left            =   2400
@@ -486,8 +436,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   1
          Left            =   1320
@@ -496,8 +445,7 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Cpu 
-         BackColor       =   &H00FFFF80&
-         Caption         =   "Label5"
+         BackColor       =   &H00FFFFC0&
          Height          =   855
          Index           =   0
          Left            =   240
@@ -515,8 +463,18 @@ Begin VB.Form Form1
       Top             =   720
       Width           =   6735
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00FFFFFF&
          Height          =   855
          Index           =   35
          Left            =   5640
@@ -525,8 +483,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   34
          Left            =   4560
@@ -535,8 +503,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   33
          Left            =   3480
@@ -545,8 +523,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   32
          Left            =   2400
@@ -555,8 +543,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   31
          Left            =   1320
@@ -565,8 +563,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   30
          Left            =   240
@@ -575,8 +583,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   29
          Left            =   5640
@@ -585,8 +603,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   28
          Left            =   4560
@@ -595,8 +623,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   27
          Left            =   3480
@@ -605,8 +643,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   26
          Left            =   2400
@@ -615,8 +663,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   25
          Left            =   1320
@@ -625,8 +683,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   24
          Left            =   240
@@ -635,8 +703,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   23
          Left            =   5640
@@ -645,8 +723,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   22
          Left            =   4560
@@ -655,8 +743,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   21
          Left            =   3480
@@ -665,8 +763,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   20
          Left            =   2400
@@ -675,8 +783,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   19
          Left            =   1320
@@ -685,8 +803,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   18
          Left            =   240
@@ -695,8 +823,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   17
          Left            =   5640
@@ -705,8 +843,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   16
          Left            =   4560
@@ -715,8 +863,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   15
          Left            =   3480
@@ -725,8 +883,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   14
          Left            =   2400
@@ -735,8 +903,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   13
          Left            =   1320
@@ -745,8 +923,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   12
          Left            =   240
@@ -755,8 +943,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   11
          Left            =   5640
@@ -765,8 +963,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   10
          Left            =   4560
@@ -775,8 +983,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   9
          Left            =   3480
@@ -785,8 +1003,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   8
          Left            =   2400
@@ -795,8 +1023,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   7
          Left            =   1320
@@ -805,8 +1043,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   6
          Left            =   240
@@ -815,8 +1063,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   5
          Left            =   5640
@@ -825,8 +1083,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   4
          Left            =   4560
@@ -835,8 +1103,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   3
          Left            =   3480
@@ -845,8 +1123,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   2
          Left            =   2400
@@ -855,8 +1143,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   "Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   0
          Left            =   240
@@ -865,8 +1163,18 @@ Begin VB.Form Form1
          Width           =   855
       End
       Begin VB.Label Player 
+         Alignment       =   2  'Center
          BackColor       =   &H00FFFFC0&
-         Caption         =   " Label1"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
          Height          =   855
          Index           =   1
          Left            =   1320
@@ -874,6 +1182,13 @@ Begin VB.Form Form1
          Top             =   360
          Width           =   855
       End
+   End
+   Begin VB.Label Label5 
+      Height          =   4575
+      Left            =   15840
+      TabIndex        =   88
+      Top             =   720
+      Width           =   3375
    End
 End
 Attribute VB_Name = "Form1"
@@ -885,7 +1200,7 @@ Option Explicit
 Dim cordX, cordY, cord, cordCpu, rndCpuX, rndCpuY As Integer
 Dim BarcoPlayer(2) As New Barco
 Dim BarcoCpu(2) As Barco
-Dim n As Integer
+Dim n, turnos As Integer
 
 Private Sub Command1_Click()
     
@@ -903,24 +1218,16 @@ Private Sub CpuCrearBarco()
     Dim j As Integer
     
     For n = 0 To 2
-        Randomize
     
-        ' Generar coordenadas aleatorias
-        rndCpuX = CInt((Rnd * 5) + 1)
-        rndCpuY = CInt((Rnd * 5) + 1)
-        
         ' Calcular la posición de CPU
-        cordCpu = CInt((6 * (rndCpuY - 1)) + (rndCpuX - 1))
+        cordCpu = CordenadaRnd
         
         For j = 0 To 2
         
             If cordCpu = posicionesOcupadas(n) Then
-                
-                rndCpuX = CInt((Rnd * 5) + 1)
-                rndCpuY = CInt((Rnd * 5) + 1)
         
                 ' Calcular la posición de CPU
-                cordCpu = CInt((6 * (rndCpuY - 1)) + (rndCpuX - 1))
+                cordCpu = CordenadaRnd
             
             Else
             
@@ -941,44 +1248,88 @@ Private Sub CpuCrearBarco()
     Next n
     
 End Sub
-Private Sub CpuAtaque()
-    Dim fallo As Boolean
+Private Function CordenadaRnd() As Integer
+        Dim cordFunction As Integer
+
+        Randomize
+        
+        ' Generar coordenadas aleatorias
+        rndCpuX = CInt((Rnd * 5) + 1)
+        rndCpuY = CInt((Rnd * 5) + 1)
+        
+        ' Calcular la posición de CPU
+        cordFunction = CInt((6 * (rndCpuY - 1)) + (rndCpuX - 1))
+        
+        CordenadaRnd = cordFunction
+
+End Function
+
+Private Sub CpuAtaque2()
+    Dim fallo, repite As Boolean
+    repite = True
     fallo = False
     
-    Randomize
-    
-    ' Generar coordenadas aleatorias
-    rndCpuX = CInt((Rnd * 5) + 1)
-    rndCpuY = CInt((Rnd * 5) + 1)
+    Do
+        cord = CordenadaRnd
         
-    ' Calcular la posición de CPU
-    cord = CInt((6 * (rndCpuY - 1)) + (rndCpuX - 1))
+        If Player(cord).Caption = "Agua" Or Player(cord).Caption = "Hundido" Then
+                
+            repite = True
+            
+        Else
+        
+            For n = 0 To 2
+        
+                If BarcoPlayer(n).GetPosci = cord Then
+        
+                    MsgBox "Hundido", vbCritical, "En el Blanco"
+                    BarcoPlayer(n).SetHundido (True)
+                    Player(cord).BackColor = &HFF&
+                    Player(cord).Caption = "Hundido"
+                    fallo = False
+                    repite = False
+                    n = 2
+                
+                    Print (cord)
+            
+                Else
+            
+                    fallo = True
+            
+                End If
+        
+            Next n
+    
+            If fallo = True Then
+    
+                MsgBox "Fallo el tiro", vbInformation, "En el Agua"
+                Player(cord).BackColor = &HC00000
+                Player(cord).Caption = "Agua"
+                repite = False
+            
+                Print (cord)
+            
+            End If
+        
+        End If
+        
+    Loop Until (repite = False)
+    
+    
+End Sub
+
+Private Sub Score()
+    Dim barcosPlayer, barcosCpu As Integer
     
     For n = 0 To 2
         
-        If BarcoPlayer(n).GetPosci = cord Then
-        
-            MsgBox "Hundido", vbCritical, "En el Blanco"
-            BarcoPlayer(n).SetHundido (True)
-            Player(cord).BackColor = &HFF&
-            fallo = False
-            n = 2
-            
-        Else
-            
-            fallo = True
-            
-        End If
-        
+        BarcoPlayer (n)
+    
     Next n
-    
-    If fallo = True Then
-    
-        MsgBox "Fallo el tiro", vbInformation, "En el Agua"
-        Player(cord).BackColor = &HC00000
-            
-    End If
 
+    Label5.Caption = ""
+    
+    
 End Sub
 
 Private Function Ataque(cord As Integer)
@@ -1032,18 +1383,6 @@ Private Sub Command3_Click()
 
 End Sub
 
-Private Sub Command4_Click()
-    
-    Unload Form1
-    
-End Sub
-
-Private Sub Command5_Click()
-    
-    Load Form1
-    
-End Sub
-
 Private Sub Command6_Click()
 
     CpuAtaque
@@ -1053,6 +1392,8 @@ End Sub
 Private Sub Form_Activate()
     
     n = 0
+    
+    Label5.Caption = " "
+    
 
 End Sub
-
