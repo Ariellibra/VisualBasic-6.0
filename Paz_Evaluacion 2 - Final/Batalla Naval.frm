@@ -9,6 +9,14 @@ Begin VB.Form Form1
    ScaleHeight     =   11460
    ScaleWidth      =   22980
    StartUpPosition =   3  'Windows Default
+   Begin VB.CommandButton Command6 
+      Caption         =   "Cambiar Turno"
+      Height          =   855
+      Left            =   6240
+      TabIndex        =   89
+      Top             =   8160
+      Width           =   2055
+   End
    Begin VB.CommandButton Command5 
       Caption         =   "Command4"
       Height          =   615
@@ -934,14 +942,17 @@ Private Sub CpuCrearBarco()
     
 End Sub
 Private Sub CpuAtaque()
-    
-    
-
-End Sub
-
-Private Function Ataque(cord As Integer)
     Dim fallo As Boolean
     fallo = False
+    
+    Randomize
+    
+    ' Generar coordenadas aleatorias
+    rndCpuX = CInt((Rnd * 5) + 1)
+    rndCpuY = CInt((Rnd * 5) + 1)
+        
+    ' Calcular la posición de CPU
+    cord = CInt((6 * (rndCpuY - 1)) + (rndCpuX - 1))
     
     For n = 0 To 2
         
@@ -965,6 +976,37 @@ Private Function Ataque(cord As Integer)
     
         MsgBox "Fallo el tiro", vbInformation, "En el Agua"
         Player(cord).BackColor = &HC00000
+            
+    End If
+
+End Sub
+
+Private Function Ataque(cord As Integer)
+    Dim fallo As Boolean
+    fallo = False
+    
+    For n = 0 To 2
+        
+        If BarcoCpu(n).GetPosci = cord Then
+        
+            MsgBox "Hundido", vbCritical, "En el Blanco"
+            BarcoCpu(n).SetHundido (True)
+            Cpu(cord).BackColor = &HFF&
+            fallo = False
+            n = 2
+            
+        Else
+            
+            fallo = True
+            
+        End If
+        
+    Next n
+    
+    If fallo = True Then
+    
+        MsgBox "Fallo el tiro", vbInformation, "En el Agua"
+        Cpu(cord).BackColor = &HC00000
             
     End If
     
@@ -1000,6 +1042,12 @@ Private Sub Command5_Click()
     
     Load Form1
     
+End Sub
+
+Private Sub Command6_Click()
+
+    CpuAtaque
+
 End Sub
 
 Private Sub Form_Activate()
