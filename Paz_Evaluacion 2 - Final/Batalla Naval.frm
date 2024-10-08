@@ -125,7 +125,7 @@ Begin VB.Form Form1
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      ForeColor       =   &H80000005&
+      ForeColor       =   &H0000FFFF&
       Height          =   7260
       Left            =   19080
       TabIndex        =   111
@@ -2453,7 +2453,7 @@ Private Sub CpuCrearBarco()
         BarcoCpu(n).Constructor "Cpu", cordCpu, False
         
         ' Cambiar el color de fondo del cuadro correspondiente
-        Cpu(BarcoCpu(n).GetPosci).BackColor = &H4080&
+        'Cpu(BarcoCpu(n).GetPosci).BackColor = &H4080&
     Next n
 End Sub
 
@@ -2522,8 +2522,12 @@ Private Sub CpuAtaque()
         
     Loop Until (repite = False)
     
+    'List1.ForeColor = &HFFFF&
+    
     List1.AddItem ("La Maquina Ataco en la posicion: Y: " & rndCpuY & " X: " & rndCpuX)
     List1.AddItem ("El resultado fue: " & Player(cord).Caption)
+    
+    'List1.ForeColor = &HFFFFFF
     
     turnoActual = "Player"
     
@@ -2543,6 +2547,17 @@ Private Sub Score()
         If BarcoPlayer(n).GetHundido = True Then
             
             barcosPlayer = barcosPlayer + 1
+            
+            If barcosPlayer = 1 Then
+                
+                List1.AddItem ("Cpu: Hundido pa, me quedan 2 nomas")
+                
+            ElseIf barcosPlayer = 2 Then
+                
+                List1.AddItem ("Cpu: Te queda 1 barquito y sos pollo")
+                
+            End If
+            
             
         End If
         
