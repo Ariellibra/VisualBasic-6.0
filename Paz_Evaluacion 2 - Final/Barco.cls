@@ -29,6 +29,12 @@ Public Function GetPosci() As Integer
     
 End Function
 
+Public Function GetHundido() As Boolean
+
+    GetHundido = hundido
+    
+End Function
+
 Public Sub SetHundido(bool As Boolean)
     
     hundido = bool
