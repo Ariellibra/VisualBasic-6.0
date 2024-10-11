@@ -1,5 +1,5 @@
 Type=Exe
-Form=Paz_ArchivosPlanos2.frm
+Form=Paz_056 Listado Datos Alumnos.frm
 Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#C:\WINDOWS\system32\stdole2.tlb#OLE Automation
 Startup="Form1"
 Command32=""
@@ -11,7 +11,6 @@ MinorVer=0
 RevisionVer=0
 AutoIncrementVer=0
 ServerSupportFiles=0
-VersionCompanyName="eve"
 CompilationType=0
 OptimizationType=0
 FavorPentiumPro(tm)=0

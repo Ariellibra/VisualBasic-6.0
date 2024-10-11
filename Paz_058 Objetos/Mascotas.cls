@@ -12,9 +12,9 @@ Attribute VB_Creatable = True
 Attribute VB_PredeclaredId = False
 Attribute VB_Exposed = False
 Private name As String
-Public edad As Integer
-Public peso As Double
-Public raza As String
+Private edad As Integer
+Private peso As Double
+Private raza As String
 
 Public Sub Constructor(n As String, e As Integer, p As Double, r As String)
     
@@ -28,14 +28,50 @@ End Sub
 Public Function GetName() As String
 
     GetName = name
-        
+    
 End Function
 
-Public Function SetName(x As String)
+Public Sub SetName(x As String)
 
     name = x
+    
+End Sub
 
+Public Function GetEdad() As Integer
+
+    GetEdad = edad
+    
 End Function
+
+Public Sub SetEdad(x As Integer)
+
+    edad = x
+    
+End Sub
+
+Public Function GetPeso() As Double
+
+    GetPeso = peso
+    
+End Function
+
+Public Sub SetPeso(x As Double)
+
+    peso = x
+    
+End Sub
+
+Public Function GetRaza() As String
+
+    GetRaza = raza
+    
+End Function
+
+Public Sub SetRaza(x As String)
+    
+    raza = x
+    
+End Sub
 
 Public Function esGrande() As Boolean
     Dim grande As Boolean
