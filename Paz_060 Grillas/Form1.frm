@@ -10,6 +10,14 @@ Begin VB.Form Form1
    ScaleHeight     =   10980
    ScaleWidth      =   18165
    StartUpPosition =   3  'Windows Default
+   Begin VB.CommandButton Command3 
+      Caption         =   "Al Revez 2"
+      Height          =   615
+      Left            =   11160
+      TabIndex        =   3
+      Top             =   2760
+      Width           =   1815
+   End
    Begin VB.CommandButton Command2 
       Caption         =   "Normal"
       Height          =   615
@@ -23,7 +31,7 @@ Begin VB.Form Form1
       Height          =   615
       Left            =   11160
       TabIndex        =   1
-      Top             =   1920
+      Top             =   1680
       Width           =   1815
    End
    Begin MSFlexGridLib.MSFlexGrid Grilla 
@@ -142,6 +150,27 @@ Private Sub Command2_Click()
     formateaDatos
     k = 1
     traerDatos
+    
+End Sub
+
+Private Sub Command3_Click()
+    
+    Grilla.Cols = 6
+    Grilla.Rows = 30
+    
+    For n = 1 To 20
+        
+        Grilla.AddItem Grilla.TextMatrix(21 - n, 0) & vbTab & Grilla.TextMatrix(21 - n, 1), n
+        
+        If n = 21 Then
+        
+        Else
+        
+            Grilla.RemoveItem (21 - n)
+        End If
+        
+    Next n
+    
     
 End Sub
 
