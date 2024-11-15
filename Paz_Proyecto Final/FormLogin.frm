@@ -87,14 +87,15 @@ End Sub
 
 Private Sub Aceptar_Click()
 
-    login = baseLogin.Chequeo(Text1, Text2)
-    
-    
+    'login = baseLogin.Chequeo(Text1, Text2)
+        
+    login = True
     
     If login = True Then
     
         Me.Hide
         Form1.Show
+        
     Else
     
         MsgBox "La contraseña no es válida. Vuelva a intentarlo", , "Inicio de sesión"

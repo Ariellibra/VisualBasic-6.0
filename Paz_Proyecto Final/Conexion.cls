@@ -38,3 +38,14 @@ Public Function Chequeo(usu As String, pass As String) As Boolean
     End If
     
 End Function
+
+Public Function altaCliente(dato1 As String, dato2 As String, dato3 As String, dato4 As Long)
+    
+    registro.AddNew
+    registro.Fields("nombre") = dato1
+    registro.Fields("apellido") = dato2
+    registro.Fields("direccion") = dato3
+    registro.Fields("cuil") = CLng(dato4)
+    registro.Update
+    
+End Function
