@@ -1,0 +1,5 @@
+Línea 29: la clase MSFlexGridLib.MSFlexGrid del control Grilla no era una clase de control cargada.
+Línea 35: el nombre de la propiedad _ExtentX de Grilla no es válido.
+Línea 36: el nombre de la propiedad _ExtentY de Grilla no es válido.
+Línea 37: el nombre de la propiedad _Version de Grilla no es válido.
+Línea 38: el nombre de la propiedad GridLines de Grilla no es válido.
