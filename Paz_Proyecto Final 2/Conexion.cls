@@ -39,9 +39,9 @@ End Function
 Public Function altaCliente(dato1 As String, dato2 As String, dato3 As String, dato4 As Long)
     
     registro.AddNew
-    registro.Fields("nombre") = LCase(dato1)
-    registro.Fields("apellido") = LCase(dato2)
-    registro.Fields("direccion") = LCase(dato3)
+    registro.Fields("nombre") = UCase(dato1)
+    registro.Fields("apellido") = UCase(dato2)
+    registro.Fields("direccion") = UCase(dato3)
     registro.Fields("cuit") = CLng(dato4)
     registro.Update
     
@@ -49,11 +49,11 @@ End Function
 Public Function altaProducto(dato1 As String, dato2 As String, dato3 As String, dato4 As String, dato5 As String)
     
     registro.AddNew
-    registro.Fields("codigoProducto") = LCase(dato1)
-    registro.Fields("nombreProducto") = LCase(dato2)
-    registro.Fields("costro") = LCase(dato3)
-    registro.Fields("venta") = LCase(dato4)
-    registro.Fields("stock") = LCase(dato5)
+    registro.Fields("codigoProducto") = UCase(dato1)
+    registro.Fields("nombreProducto") = UCase(dato2)
+    registro.Fields("costo") = UCase(dato3)
+    registro.Fields("venta") = UCase(dato4)
+    registro.Fields("stock") = UCase(dato5)
     registro.Update
     
 End Function

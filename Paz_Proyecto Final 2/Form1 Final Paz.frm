@@ -2,14 +2,463 @@ VERSION 5.00
 Object = "{5E9E78A0-531B-11CF-91F6-C2863C385E30}#1.0#0"; "MSFLXGRD.OCX"
 Begin VB.Form Form1 
    Caption         =   "Form1"
-   ClientHeight    =   11385
+   ClientHeight    =   12930
    ClientLeft      =   60
    ClientTop       =   450
    ClientWidth     =   22875
    LinkTopic       =   "Form1"
-   ScaleHeight     =   11385
+   ScaleHeight     =   12930
    ScaleWidth      =   22875
    StartUpPosition =   3  'Windows Default
+   Begin VB.Frame Frame3 
+      BackColor       =   &H00C0C000&
+      Caption         =   "Facturacion"
+      BeginProperty Font 
+         Name            =   "Franklin Gothic Medium"
+         Size            =   18
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   12015
+      Left            =   1080
+      TabIndex        =   39
+      Top             =   1440
+      Visible         =   0   'False
+      Width           =   21855
+      Begin VB.TextBox Text1 
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   18
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   495
+         Index           =   11
+         Left            =   2280
+         TabIndex        =   62
+         Top             =   4440
+         Width           =   2415
+      End
+      Begin VB.TextBox Text1 
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   18
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   495
+         Index           =   10
+         Left            =   2280
+         TabIndex        =   61
+         Top             =   3480
+         Width           =   2415
+      End
+      Begin VB.CommandButton Command19 
+         BackColor       =   &H00FF8080&
+         Caption         =   "Buscar"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   15.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   735
+         Left            =   5040
+         Style           =   1  'Graphical
+         TabIndex        =   60
+         Top             =   3360
+         Width           =   1695
+      End
+      Begin VB.Timer Timer3 
+         Enabled         =   0   'False
+         Interval        =   5000
+         Left            =   3000
+         Top             =   0
+      End
+      Begin VB.CommandButton Command18 
+         BackColor       =   &H00FFC0FF&
+         Caption         =   "Limpiar"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   15.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   615
+         Left            =   5160
+         Style           =   1  'Graphical
+         TabIndex        =   45
+         Top             =   10560
+         Width           =   1695
+      End
+      Begin VB.CommandButton Command17 
+         BackColor       =   &H008080FF&
+         Caption         =   "Eliminar"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   15.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   615
+         Left            =   5160
+         Style           =   1  'Graphical
+         TabIndex        =   44
+         Top             =   9720
+         Width           =   1695
+      End
+      Begin VB.CommandButton Command16 
+         BackColor       =   &H0080C0FF&
+         Caption         =   "Modificar"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   15.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   615
+         Left            =   5160
+         Style           =   1  'Graphical
+         TabIndex        =   43
+         Top             =   8880
+         Width           =   1695
+      End
+      Begin VB.CommandButton Command15 
+         BackColor       =   &H0080FF80&
+         Caption         =   "Agregar"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   15.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   735
+         Left            =   5040
+         Style           =   1  'Graphical
+         TabIndex        =   42
+         Top             =   4320
+         Width           =   1695
+      End
+      Begin VB.CommandButton Command14 
+         BackColor       =   &H00FF8080&
+         Caption         =   "Buscar"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   15.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   615
+         Left            =   3120
+         Style           =   1  'Graphical
+         TabIndex        =   41
+         Top             =   840
+         Width           =   1695
+      End
+      Begin VB.TextBox Text1 
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   18
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   495
+         Index           =   9
+         Left            =   2280
+         TabIndex        =   40
+         Top             =   1680
+         Width           =   2415
+      End
+      Begin MSFlexGridLib.MSFlexGrid GridFact 
+         Height          =   7095
+         Left            =   7080
+         TabIndex        =   46
+         Top             =   1800
+         Width           =   14415
+         _ExtentX        =   25426
+         _ExtentY        =   12515
+         _Version        =   393216
+         Cols            =   5
+         BackColorBkg    =   16744703
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   15.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+      End
+      Begin VB.Label Label16 
+         BackColor       =   &H00FFC0FF&
+         Caption         =   "Cantidad"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   18
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   735
+         Left            =   480
+         TabIndex        =   49
+         Top             =   4320
+         Width           =   4335
+      End
+      Begin VB.Label Label26 
+         BackColor       =   &H00FFC0FF&
+         Caption         =   "Codigo"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   18
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   735
+         Left            =   480
+         TabIndex        =   59
+         Top             =   3360
+         Width           =   4335
+      End
+      Begin VB.Label Label24 
+         BackColor       =   &H00808080&
+         Caption         =   "Datos Producto"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   18
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
+         Height          =   2535
+         Left            =   360
+         TabIndex        =   57
+         Top             =   2760
+         Width           =   6495
+      End
+      Begin VB.Label Label23 
+         BackColor       =   &H00808080&
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   18
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
+         Height          =   855
+         Left            =   4920
+         TabIndex        =   56
+         Top             =   720
+         Width           =   9375
+      End
+      Begin VB.Label Label22 
+         BackColor       =   &H00FFC0FF&
+         Caption         =   "Fecha: "
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   18
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   735
+         Left            =   14520
+         TabIndex        =   55
+         Top             =   360
+         Width           =   3735
+      End
+      Begin VB.Label Label21 
+         BackColor       =   &H00FFC0FF&
+         Caption         =   "NumFactura: "
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   18
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   735
+         Left            =   18360
+         TabIndex        =   54
+         Top             =   360
+         Width           =   3375
+      End
+      Begin VB.Label Label18 
+         BackColor       =   &H00FFC0FF&
+         Caption         =   "Total"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   18
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   735
+         Left            =   600
+         TabIndex        =   51
+         Top             =   9600
+         Width           =   4335
+      End
+      Begin VB.Label Label17 
+         BackColor       =   &H00FFC0FF&
+         Caption         =   "SubTotal"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   18
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   735
+         Left            =   600
+         TabIndex        =   50
+         Top             =   8760
+         Width           =   4335
+      End
+      Begin VB.Label Label15 
+         BackColor       =   &H00FFC0FF&
+         Caption         =   "Cuit"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   18
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   735
+         Left            =   480
+         TabIndex        =   48
+         Top             =   1560
+         Width           =   4335
+      End
+      Begin VB.Label Label14 
+         BackColor       =   &H00FFC0FF&
+         Caption         =   "Stock"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   18
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   735
+         Left            =   600
+         TabIndex        =   47
+         Top             =   10440
+         Width           =   4335
+      End
+      Begin VB.Label Label20 
+         BackColor       =   &H00808080&
+         Caption         =   "Importante: El programa usa el 'CODIGO' para las consultas en la base de datos, recuerde que el CODIGO' es un numero UNICO."
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   18
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
+         Height          =   2055
+         Left            =   15000
+         TabIndex        =   53
+         Top             =   9240
+         Width           =   6495
+      End
+      Begin VB.Label Label19 
+         BackColor       =   &H00808080&
+         Caption         =   "Datos Cliente"
+         BeginProperty Font 
+            Name            =   "Franklin Gothic Medium"
+            Size            =   18
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H8000000E&
+         Height          =   1815
+         Left            =   360
+         TabIndex        =   52
+         Top             =   720
+         Width           =   4575
+      End
+   End
+   Begin VB.CommandButton Command13 
+      BackColor       =   &H00C0C000&
+      Caption         =   "Facturacion"
+      BeginProperty Font 
+         Name            =   "Franklin Gothic Medium"
+         Size            =   18
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   615
+      Left            =   5400
+      Style           =   1  'Graphical
+      TabIndex        =   38
+      Top             =   840
+      Width           =   2175
+   End
    Begin VB.Frame Frame2 
       BackColor       =   &H00FF80FF&
       Caption         =   "Productos"
@@ -723,6 +1172,24 @@ Begin VB.Form Form1
       Top             =   840
       Width           =   2175
    End
+   Begin VB.Label Label25 
+      BackColor       =   &H00FFC0FF&
+      Caption         =   "Cuit"
+      BeginProperty Font 
+         Name            =   "Franklin Gothic Medium"
+         Size            =   18
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   735
+      Left            =   2040
+      TabIndex        =   58
+      Top             =   4320
+      Width           =   4335
+   End
 End
 Attribute VB_Name = "Form1"
 Attribute VB_GlobalNameSpace = False
@@ -732,10 +1199,12 @@ Attribute VB_Exposed = False
 Option Explicit
 Dim dataCliente As New Conexion
 Dim dataProd As New Conexion
+Dim contFact, contFactRow As Integer
 
 Private Sub Command1_Click()
     Frame1.Visible = True
     Frame2.Visible = False
+    Frame3.Visible = False
     Text1(0).SetFocus
 End Sub
 
@@ -749,6 +1218,25 @@ End Sub
 
 Private Sub Command12_Click()
     buscarProducto
+End Sub
+
+Private Sub Command13_Click()
+    Frame3.Visible = True
+    Frame1.Visible = False
+    Frame2.Visible = False
+    Text1(9).SetFocus
+End Sub
+
+Private Sub Command14_Click()
+    buscaClienteFactura
+End Sub
+
+Private Sub Command15_Click()
+    sumaCantidad
+End Sub
+
+Private Sub Command19_Click()
+    buscaProductoFactura
 End Sub
 
 Private Sub Command2_Click()
@@ -774,6 +1262,7 @@ End Sub
 Private Sub Command7_Click()
     Frame2.Visible = True
     Frame1.Visible = False
+    Frame3.Visible = False
     Text1(4).SetFocus
 End Sub
 
@@ -791,6 +1280,10 @@ Private Sub Form_Activate()
     dataProd.Conectar "Productos"
     cargaClientes
     cargaProd
+    cargaFact
+    contFact = 1
+    contFactRow = 1
+    Label22.Caption = "Fecha: " & Date
 
 End Sub
 Private Sub altaCliente()
@@ -805,14 +1298,12 @@ Private Sub altaCliente()
     End If
     
     clienteSeek
-    
     If dataCliente.registro.NoMatch Then
         dataCliente.altaCliente Text1(1), Text1(2), Text1(3), CLng(Text1(0))
         MsgBox "Cliente agregado exitosamente", vbInformation, "Éxito"
     Else
         MsgBox "El Cuit ya esta cargado en la base de datos", vbCritical, "Error"
     End If
-    dataCliente.registro.Update
     Limpiar
     cargaClientes
     
@@ -953,7 +1444,7 @@ Private Sub altaProducto()
         Exit Sub
     End If
     
-    clienteSeek
+    productoSeek
     
     If dataProd.registro.NoMatch Then
         dataProd.altaProducto Text1(4), Text1(5), Text1(6), Text1(7), Text1(8)
@@ -961,7 +1452,6 @@ Private Sub altaProducto()
     Else
         MsgBox "El producto ya está cargado en la base de datos", vbCritical, "Error"
     End If
-    dataProd.registro.Update
     Limpiar
     cargaProd
     
@@ -1052,9 +1542,9 @@ Private Sub buscarProducto()
         End If
     Next i
 End Sub
-Private Sub prodSeek()
+Private Sub productoSeek()
     dataProd.registro.Index = "indexProducto"
-    dataProd.registro.Seek "=", CLng(Text1(0))
+    dataProd.registro.Seek "=", Text1(4)
 End Sub
 Private Sub cargaProd()
     Dim n As Integer
@@ -1095,12 +1585,129 @@ Private Sub cargaProd()
     Loop
     
 End Sub
+Private Sub buscaClienteFactura()
+    If Text1(9) = "" Then
+        MsgBox "Error, no se puede cargar datos vacios", vbCritical, "Error"
+        Limpiar
+        Exit Sub
+    ElseIf Not IsNumeric(Text1(9)) Then
+        MsgBox "Error, el 'CUIT', solamente acepta numeros", vbCritical, "Error"
+        Limpiar
+        Exit Sub
+    End If
+    
+    clienteSeekFactura
+    If dataCliente.registro.NoMatch Then
+        MsgBox "El 'CUIT' no existe", vbCritical, "Error"
+        Limpiar
+        Exit Sub
+    Else
+        Label23.Caption = _
+        "Nombre: " & dataCliente.registro.Fields("nombre").Value & vbCrLf & _
+        "Apellido: " & dataCliente.registro.Fields("apellido").Value & vbCrLf & _
+        "Direccion: " & dataCliente.registro.Fields("direccion").Value
+        Command14.Enabled = False
+        Text1(9).Enabled = False
+    End If
+    
+End Sub
+Private Sub buscaProductoFactura()
+    If Text1(10) = "" Then
+        MsgBox "Error, el 'Código' no puede estar vacío", vbCritical, "Error"
+        Limpiar
+        Exit Sub
+    End If
+
+    productoSeekFactura
+    
+    If dataProd.registro.NoMatch Then
+        MsgBox "El 'Código' del producto no existe", vbCritical, "Error"
+        Limpiar
+        Exit Sub
+    Else
+        With GridFact
+        .Rows = .Rows + 1
+        .TextMatrix(contFactRow, 0) = contFactRow
+        .TextMatrix(contFactRow, 1) = dataProd.registro.Fields("codigoProducto").Value
+        .TextMatrix(contFactRow, 2) = dataProd.registro.Fields("nombreProducto").Value
+        .TextMatrix(contFactRow, 3) = dataProd.registro.Fields("stock").Value
+        .TextMatrix(contFactRow, 5) = dataProd.registro.Fields("venta").Value
+        .TextMatrix(contFactRow, 7) = "X"
+        End With
+        Text1(10).Enabled = False
+        Command19.Enabled = False
+    End If
+    
+    'MsgBox "Producto modificado exitosamente", vbInformation, "Éxito"
+    
+End Sub
+Private Sub sumaCantidad()
+    
+    If Text1(11) = "" Then
+        MsgBox "Error, la cantidad no puede estar vacía", vbCritical, "Error"
+        Limpiar
+        Exit Sub
+    
+    ElseIf Not IsNumeric(Text1(11)) Then
+        MsgBox "Error, la cantidad tiene que ser un numero", vbCritical, "Error"
+        Limpiar
+        Exit Sub
+    Else
+        With GridFact
+        .TextMatrix(contFactRow, 4) = Text1(11)
+        .TextMatrix(contFactRow, 6) = CLng(Text1(11)) * CLng(.TextMatrix(contFactRow, 5))
+        End With
+        contFactRow = contFactRow + 1
+        Text1(10).Enabled = True
+        Command19.Enabled = True
+    End If
+    
+    
+    
+End Sub
+Private Sub clienteSeekFactura()
+    dataCliente.registro.Index = "indexClientes"
+    dataCliente.registro.Seek "=", CLng(Text1(9))
+End Sub
+Private Sub productoSeekFactura()
+    dataProd.registro.Index = "indexProducto"
+    dataProd.registro.Seek "=", Text1(10)
+End Sub
+Private Sub cargaFact()
+
+    With GridFact
+    .Cols = 8
+    .Rows = 1
+    .TextMatrix(0, 0) = "ID"
+    .TextMatrix(0, 1) = "Codigo"
+    .TextMatrix(0, 2) = "Nombre"
+    .TextMatrix(0, 3) = "Stock"
+    .TextMatrix(0, 4) = "Cantidad"
+    .TextMatrix(0, 5) = "Precio"
+    .TextMatrix(0, 6) = "SubTotal"
+    .TextMatrix(0, 7) = "Borrar"
+    .ColWidth(0) = 500
+    .ColWidth(1) = 1500
+    .ColWidth(2) = 2500
+    .ColWidth(3) = 1000
+    .ColWidth(4) = 2000
+    .ColWidth(5) = 2000
+    .ColWidth(6) = 2000
+    .ColWidth(7) = 1500
+    End With
+
+End Sub
 Private Sub Limpiar()
     Dim n As Integer
     For n = 0 To Text1.Count - 1
         Text1(n).Text = ""
     Next n
 End Sub
+
+Private Sub GridFact_Click()
+    GridFact.RemoveItem (GridFact.RowSel)
+End Sub
+
 Private Sub Text1_GotFocus(Index As Integer)
     Text1(Index).BackColor = &H80FF80
 End Sub
